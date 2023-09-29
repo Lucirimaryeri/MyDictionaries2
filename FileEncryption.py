@@ -63,18 +63,3 @@ with open('encrypted.txt', 'w') as encrypt:
         else:
             encrypt.write(char)
 
-
-
-'''''
-encrypt = open('text.txt', 'r')
-file1 = encrypt.read()
-encrypt.close()
-codes_items = codes.items()
-for l in file1:
-    if not ch in codes.values() or ch == '.':
-        print(ch,end="")
-    else:
-        for k, v in codes_items:
-            if ch == v and ch != '.':
-                print(k, end='')
-'''
